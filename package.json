@@ -1,24 +1,28 @@
 {
-  "name": "admin-lte",
-  "version": "2.3.2",
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/almasaeed2010/AdminLTE.git"
+  "name": "AdminLTE-angular2",
+  "version": "1.0.0",
+  "scripts": {
+    "postinstall": "npm run typings install",
+    "tsc": "tsc",
+    "tsc:w": "tsc -w",
+    "lite": "lite-server",
+    "start": "concurrent \"npm run tsc:w\" \"npm run lite\" ",
+    "typings" : "typings"
   },
-  "license": "MIT",
+  "license": "ISC",
+  "dependencies": {
+    "angular2": "2.0.0-beta.6",
+    "systemjs": "0.19.20",
+    "es6-promise": "^3.0.2",
+    "es6-shim": "^0.33.3",
+    "reflect-metadata": "0.1.2",
+    "rxjs": "5.0.0-beta.0",
+    "zone.js": "0.5.14"
+  },
   "devDependencies": {
-    "R2": "^1.4.3",
-    "grunt": "~0.4.5",
-    "grunt-bootlint": "^0.9.1",
-    "grunt-contrib-clean": "^0.6.0",
-    "grunt-contrib-csslint": "^0.5.0",
-    "grunt-contrib-cssmin": "^0.12.2",
-    "grunt-contrib-jshint": "^0.11.2",
-    "grunt-contrib-less": "^0.12.0",
-    "grunt-contrib-uglify": "^0.7.0",
-    "grunt-contrib-watch": "~0.6.1",
-    "grunt-cssjanus": "^0.2.4",
-    "grunt-image": "^1.0.5",
-    "grunt-includes": "^0.4.5"
+    "concurrently": "^1.0.0",
+    "lite-server": "^2.0.1",
+    "typescript": "^1.7.5",
+    "typings":"^0.6.8"
   }
 }
