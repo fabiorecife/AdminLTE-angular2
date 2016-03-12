@@ -1,4 +1,4 @@
-import {Component} from 'angular2/core';
+import {Component, OnInit} from 'angular2/core';
 
 declare var System;
 
@@ -6,7 +6,7 @@ declare var System;
     selector: 'my-app',
     templateUrl: 'app/tpl/app.component.html'
 })
-export class AppComponent {
+export class AppComponent implements OnInit {
   ngOnInit() {
     //<!-- Bootstrap 3.3.5 -->
     System.import('bootstrap/js/bootstrap.min');
