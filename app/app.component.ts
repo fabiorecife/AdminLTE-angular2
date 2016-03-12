@@ -1,10 +1,12 @@
 import {Component, OnInit} from 'angular2/core';
+import {DashboardComponent} from './dashboard.component';
 
 declare var System;
 
 @Component({
     selector: 'my-app',
-    templateUrl: 'app/tpl/app.component.html'
+    templateUrl: 'app/tpl/app.component.html',
+    directives:[DashboardComponent]
 })
 export class AppComponent implements OnInit {
   ngOnInit() {
