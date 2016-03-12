@@ -9,6 +9,9 @@ declare var System;
     directives:[DashboardComponent]
 })
 export class AppComponent implements OnInit {
+  title = "Admin";
+  subtitle = "LTE";
+
   ngOnInit() {
     //<!-- Bootstrap 3.3.5 -->
     System.import('bootstrap/js/bootstrap.min');
@@ -35,8 +38,6 @@ export class AppComponent implements OnInit {
     System.import('plugins/fastclick/fastclick');
     //<!-- AdminLTE App -->
     System.import('dist/js/app.min');
-    //<!-- AdminLTE dashboard demo (This is only for demo purposes) -->
-    System.import('dist/js/pages/dashboard');
     //<!-- AdminLTE for demo purposes -->
     System.import('dist/js/demo');
 
