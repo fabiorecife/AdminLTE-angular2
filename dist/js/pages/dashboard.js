@@ -28,8 +28,10 @@ $(function () {
   });
 
   //bootstrap WYSIHTML5 - text editor
-  $(".textarea").wysihtml5();
-
+  /*
+    //TODO: enable
+    $(".textarea").wysihtml5();
+  */
   $('.daterange').daterangepicker({
     ranges: {
       'Today': [moment(), moment()],
@@ -63,6 +65,8 @@ $(function () {
     "RU": 3000 //Russia
   };
   //World map by jvectormap
+  /*
+  //TODO: enable
   $('#world-map').vectorMap({
     map: 'world_mill_en',
     backgroundColor: "transparent",
@@ -87,7 +91,7 @@ $(function () {
         el.html(el.html() + ': ' + visitorsData[code] + ' new visitors');
     }
   });
-
+*/
   //Sparkline charts
   var myvalues = [1000, 1200, 920, 927, 931, 1027, 819, 930, 1021];
   $('#sparkline-1').sparkline(myvalues, {
