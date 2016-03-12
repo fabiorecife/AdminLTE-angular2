@@ -1,13 +1,33 @@
 import {Component, OnInit} from 'angular2/core';
-import {DashboardComponent} from './dashboard.component';
+import { RouteConfig, ROUTER_DIRECTIVES, ROUTER_PROVIDERS} from 'angular2/router';
+
+import {DashboardComponent} from './pages/dashboard.component';
+import {ButtonsComponent} from './pages/UI/buttons.component';
+
 
 declare var System;
 
 @Component({
     selector: 'my-app',
-    templateUrl: 'app/tpl/app.component.html',
-    directives:[DashboardComponent]
+    templateUrl: 'app/app.component.html',
+    directives: [ROUTER_DIRECTIVES],
+    providers: [
+      ROUTER_PROVIDERS
+    ]
 })
+@RouteConfig([
+  {
+    path: '/dashboard',
+    name: 'Dashboard',
+    component: DashboardComponent,
+    useAsDefault: true
+  },
+  {
+    path: '/ui/buttons',
+    name: 'Buttons',
+    component: ButtonsComponent
+  }
+])
 export class AppComponent implements OnInit {
   title = "Admin";
   subtitle = "LTE";

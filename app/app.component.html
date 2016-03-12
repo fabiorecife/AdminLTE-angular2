@@ -295,7 +295,7 @@
               <i class="fa fa-dashboard"></i> <span>Dashboard</span> <i class="fa fa-angle-left pull-right"></i>
             </a>
             <ul class="treeview-menu">
-              <li class="active"><a href="index.html"><i class="fa fa-circle-o"></i> Dashboard v1</a></li>
+              <li class="active"><a [routerLink]="['Dashboard']"><i class="fa fa-circle-o"></i> Dashboard v1</a></li>
               <li><a href="index2.html"><i class="fa fa-circle-o"></i> Dashboard v2</a></li>
             </ul>
           </li>
@@ -340,7 +340,7 @@
             <ul class="treeview-menu">
               <li><a href="pages/UI/general.html"><i class="fa fa-circle-o"></i> General</a></li>
               <li><a href="pages/UI/icons.html"><i class="fa fa-circle-o"></i> Icons</a></li>
-              <li><a href="pages/UI/buttons.html"><i class="fa fa-circle-o"></i> Buttons</a></li>
+              <li><a [routerLink]="['Buttons']"><i class="fa fa-circle-o"></i> Buttons</a></li>
               <li><a href="pages/UI/sliders.html"><i class="fa fa-circle-o"></i> Sliders</a></li>
               <li><a href="pages/UI/timeline.html"><i class="fa fa-circle-o"></i> Timeline</a></li>
               <li><a href="pages/UI/modals.html"><i class="fa fa-circle-o"></i> Modals</a></li>
@@ -429,7 +429,7 @@
       <!-- /.sidebar -->
     </aside>
 
-    <dashboard></dashboard>
+    <router-outlet></router-outlet>
 
     <!-- /.content-wrapper -->
     <footer class="main-footer">
