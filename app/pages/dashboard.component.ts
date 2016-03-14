@@ -15,8 +15,11 @@ export class DashboardComponent implements OnInit {
     }
 
   ngOnInit() {
+
+    //wait bootstrap.datetimepicker
+    setTimeout(() => $(this.elementRef.nativeElement).find("#calendar").datepicker(),1000);
+
     //<!-- AdminLTE dashboard demo (This is only for demo purposes) -->
-    $(this.elementRef.nativeElement).find("#calendar").datepicker();
     System.import('dist/js/pages/dashboard');
     //$(this.elementRef.nativeElement).find("#calendar").css({'width': '100%'});
   }
