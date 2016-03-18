@@ -3,14 +3,14 @@ import { RouteConfig, ROUTER_DIRECTIVES, ROUTER_PROVIDERS} from 'angular2/router
 
 import {DashboardComponent} from './pages/dashboard.component';
 import {ButtonsComponent} from './pages/UI/buttons.component';
-
+import {FooterComponent} from './pages/footer.component';
 
 declare var System;
 
 @Component({
     selector: 'my-app',
     templateUrl: 'app/app.component.html',
-    directives: [ROUTER_DIRECTIVES],
+    directives: [ROUTER_DIRECTIVES, FooterComponent],
     providers: [
       ROUTER_PROVIDERS
     ]
