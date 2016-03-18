@@ -5,14 +5,18 @@ import {DashboardComponent} from './pages/dashboard.component';
 import {ButtonsComponent} from './pages/UI/buttons.component';
 import {FooterComponent} from './pages/footer.component';
 import {SidebarComponent} from './pages/sidebar.component';
-
+import {ControlSidebarComponent} from './pages/control-sidebar.componet';
+import {HeaderComponent} from './pages/header.component';
+import {GeneralComponent} from './pages/UI/general.component';
 
 declare var System;
 
 @Component({
     selector: 'my-app',
     templateUrl: 'app/app.component.html',
-    directives: [ROUTER_DIRECTIVES, FooterComponent,SidebarComponent],
+    directives: [ROUTER_DIRECTIVES,
+      FooterComponent,SidebarComponent,
+      ControlSidebarComponent,HeaderComponent],
     providers: [
       ROUTER_PROVIDERS
     ]
@@ -24,15 +28,12 @@ declare var System;
     component: DashboardComponent,
     useAsDefault: true
   },
-  {
-    path: '/ui/buttons',
-    name: 'Buttons',
-    component: ButtonsComponent
-  }
+  //UI PAGES
+  { path: '/ui/buttons',  name: 'Buttons',  component: ButtonsComponent },
+  { path: '/ui/general',  name: 'General',  component: GeneralComponent }
 ])
 export class AppComponent implements OnInit {
-  title = "Admin";
-  subtitle = "JFN";
+
 
   ngOnInit() {
     //<!-- Bootstrap 3.3.5 -->
