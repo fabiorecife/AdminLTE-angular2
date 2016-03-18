@@ -5,7 +5,7 @@ import {DashboardComponent} from './pages/dashboard.component';
 import {ButtonsComponent} from './pages/UI/buttons.component';
 import {FooterComponent} from './pages/footer.component';
 import {SidebarComponent} from './pages/sidebar.component';
-import {ControlSidebarComponent} from './pages/control-sidebar.componet';
+import {ControlSidebarComponent} from './pages/control-sidebar.component';
 import {HeaderComponent} from './pages/header.component';
 import {GeneralComponent} from './pages/UI/general.component';
 
