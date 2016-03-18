@@ -4,7 +4,7 @@ declare var System;
 declare var $;
 
 @Component({
-    selector: 'dashboard',
+    selector: 'app-dashboard',
     templateUrl: 'app/pages/dashboard.component.html'
 })
 export class DashboardComponent implements OnInit {
