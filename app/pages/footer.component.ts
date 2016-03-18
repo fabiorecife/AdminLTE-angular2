@@ -5,5 +5,6 @@ import {Component,ElementRef, OnInit} from 'angular2/core';
 })
 
 export class FooterComponent {
+  
 
 }

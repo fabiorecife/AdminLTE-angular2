@@ -30,7 +30,7 @@ declare var System;
 ])
 export class AppComponent implements OnInit {
   title = "Admin";
-  subtitle = "LTE";
+  subtitle = "JFN";
 
   ngOnInit() {
     //<!-- Bootstrap 3.3.5 -->
