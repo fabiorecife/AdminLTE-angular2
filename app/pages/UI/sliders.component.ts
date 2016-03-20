@@ -71,7 +71,7 @@ export class SlidersComponent implements OnInit {
         for (var prop in obj) {
           t += prop + ": " + obj[prop] + "\r\n";
         }
-        $("#result").html(t);
+        element.find("#result").html(t);
       },
       onLoad: function (obj) {
         //
