@@ -9,7 +9,7 @@ import {ControlSidebarComponent} from './pages/control-sidebar.component';
 import {HeaderComponent} from './pages/header.component';
 import {GeneralComponent} from './pages/UI/general.component';
 import {IconsComponent} from './pages/UI/icons.component';
-
+import {SlidersComponent} from './pages/UI/sliders.component';
 
 
 
@@ -26,16 +26,19 @@ declare var System;
     ]
 })
 @RouteConfig([
+
+  //UI PAGES
+  { path: '/ui/buttons',  name: 'Buttons',  component: ButtonsComponent },
+  { path: '/ui/general',  name: 'General',  component: GeneralComponent },
+  { path: '/ui/icons',  name: 'Icons',  component: IconsComponent },
+  { path: '/ui/sliders',  name: 'Sliders',  component: SlidersComponent },
+
   {
     path: '/dashboard',
     name: 'Dashboard',
     component: DashboardComponent,
     useAsDefault: true
-  },
-  //UI PAGES
-  { path: '/ui/buttons',  name: 'Buttons',  component: ButtonsComponent },
-  { path: '/ui/general',  name: 'General',  component: GeneralComponent },
-  { path: '/ui/icons',  name: 'Icons',  component: IconsComponent }
+  }
 ])
 export class AppComponent implements OnInit {
 
