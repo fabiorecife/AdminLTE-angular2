@@ -8,6 +8,10 @@ import {SidebarComponent} from './pages/sidebar.component';
 import {ControlSidebarComponent} from './pages/control-sidebar.component';
 import {HeaderComponent} from './pages/header.component';
 import {GeneralComponent} from './pages/UI/general.component';
+import {IconsComponent} from './pages/UI/icons.component';
+
+
+
 
 declare var System;
 
@@ -30,7 +34,8 @@ declare var System;
   },
   //UI PAGES
   { path: '/ui/buttons',  name: 'Buttons',  component: ButtonsComponent },
-  { path: '/ui/general',  name: 'General',  component: GeneralComponent }
+  { path: '/ui/general',  name: 'General',  component: GeneralComponent },
+  { path: '/ui/icons',  name: 'Icons',  component: IconsComponent }
 ])
 export class AppComponent implements OnInit {
 
