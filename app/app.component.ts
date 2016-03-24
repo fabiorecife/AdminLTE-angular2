@@ -51,9 +51,6 @@ export class AppComponent implements OnInit {
     System.import('plugins/morris/morris.min');
     //<!-- Sparkline -->
     System.import('plugins/sparkline/jquery.sparkline.min');
-    //<!-- jvectormap -->
-    System.import('plugins/jvectormap/jquery-jvectormap-1.2.2.min');
-    System.import('plugins/jvectormap/jquery-jvectormap-world-mill-en');
     //<!-- jQuery Knob Chart -->
     System.import('plugins/knob/jquery.knob');
     //<!-- daterangepicker -->

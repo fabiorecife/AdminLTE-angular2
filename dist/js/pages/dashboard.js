@@ -51,6 +51,7 @@ $(function () {
   $(".knob").knob();
 
   //jvectormap data
+  /*
   var visitorsData = {
     "US": 398, //USA
     "SA": 400, //Saudi Arabia
@@ -65,7 +66,7 @@ $(function () {
     "RU": 3000 //Russia
   };
   //World map by jvectormap
-  /*
+
   //TODO: enable
   $('#world-map').vectorMap({
     map: 'world_mill_en',
