@@ -11,7 +11,7 @@ import {GeneralComponent} from './pages/UI/general.component';
 import {IconsComponent} from './pages/UI/icons.component';
 import {SlidersComponent} from './pages/UI/sliders.component';
 import {TimelineComponent} from './pages/UI/timeline.component';
-
+import {ModalsComponent} from './pages/UI/modals.component';
 
 declare var System;
 
@@ -33,6 +33,7 @@ declare var System;
   { path: '/ui/icons',  name: 'Icons',  component: IconsComponent },
   { path: '/ui/sliders',  name: 'Sliders',  component: SlidersComponent },
   { path: '/ui/timeline',  name: 'Timeline',  component: TimelineComponent },
+  { path: '/ui/modals',  name: 'Modals',  component: ModalsComponent },
 
   {
     path: '/dashboard',
