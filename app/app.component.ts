@@ -23,7 +23,7 @@ import {SimpleTablesComponent} from './pages/tables/simple.tables.component';
 import {DataTablesComponent} from './pages/tables/data.tables.component';
 
 import {CalendarComponent} from './pages/calendar.component';
-
+import {MailboxComponent} from './pages/mailbox/mailbox.component';
 
 declare var System;
 
@@ -51,8 +51,8 @@ declare var System;
   { path: '/forms/editors',  name: 'EditorsForms',  component: EditorsFormsComponent },
   { path: '/tables/simple',  name: 'SimpleTables',  component: SimpleTablesComponent },
   { path: '/tables/data',  name: 'DataTables',  component: DataTablesComponent },
-
   { path: '/calendar',  name: 'Calendar',  component: CalendarComponent },
+  { path: '/mailbox/mailbox',  name: 'Mailbox',  component: MailboxComponent },
 
   {
     path: '/dashboard',
