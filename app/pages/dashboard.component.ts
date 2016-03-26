@@ -60,7 +60,7 @@ export class DashboardComponent implements OnInit {
     }
 
   ngOnInit() {
-
+    console.log("NG INIT - DashboardComponent");
     //<!-- jvectormap -->
     System.import('plugins/jvectormap/jquery-jvectormap-1.2.2.min');
     System.import('plugins/jvectormap/jquery-jvectormap-world-mill-en');
