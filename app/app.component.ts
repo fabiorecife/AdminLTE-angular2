@@ -1,23 +1,28 @@
 import {Component, OnInit, AfterViewInit} from 'angular2/core';
 import { RouteConfig, ROUTER_DIRECTIVES, ROUTER_PROVIDERS} from 'angular2/router';
 
+//PAGES
 import {DashboardComponent} from './pages/dashboard.component';
 import {ButtonsComponent} from './pages/UI/buttons.component';
 import {FooterComponent} from './pages/footer.component';
 import {SidebarComponent} from './pages/sidebar.component';
 import {ControlSidebarComponent} from './pages/control-sidebar.component';
 import {HeaderComponent} from './pages/header.component';
+//PAGES-UI
 import {GeneralComponent} from './pages/UI/general.component';
 import {IconsComponent} from './pages/UI/icons.component';
 import {SlidersComponent} from './pages/UI/sliders.component';
 import {TimelineComponent} from './pages/UI/timeline.component';
 import {ModalsComponent} from './pages/UI/modals.component';
+//PAGES-FORMS
 import {GeneralFormsComponent} from './pages/forms/general.forms.component';
 import {AdvancedFormsComponent} from './pages/forms/advanced.forms.component';
 import {EditorsFormsComponent} from './pages/forms/editors.forms.component';
+//PAGES-TABLES
 import {SimpleTablesComponent} from './pages/tables/simple.tables.component';
 import {DataTablesComponent} from './pages/tables/data.tables.component';
 
+import {CalendarComponent} from './pages/calendar.component';
 
 
 declare var System;
@@ -46,6 +51,8 @@ declare var System;
   { path: '/forms/editors',  name: 'EditorsForms',  component: EditorsFormsComponent },
   { path: '/tables/simple',  name: 'SimpleTables',  component: SimpleTablesComponent },
   { path: '/tables/data',  name: 'DataTables',  component: DataTablesComponent },
+
+  { path: '/calendar',  name: 'Calendar',  component: CalendarComponent },
 
   {
     path: '/dashboard',
