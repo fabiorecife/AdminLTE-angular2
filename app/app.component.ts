@@ -1,4 +1,4 @@
-import {Component, OnInit} from 'angular2/core';
+import {Component, OnInit, AfterViewInit} from 'angular2/core';
 import { RouteConfig, ROUTER_DIRECTIVES, ROUTER_PROVIDERS} from 'angular2/router';
 
 import {DashboardComponent} from './pages/dashboard.component';
@@ -12,6 +12,7 @@ import {IconsComponent} from './pages/UI/icons.component';
 import {SlidersComponent} from './pages/UI/sliders.component';
 import {TimelineComponent} from './pages/UI/timeline.component';
 import {ModalsComponent} from './pages/UI/modals.component';
+import {GeneralFormsComponent} from './pages/forms/general.forms.component';
 
 declare var System;
 
@@ -27,13 +28,14 @@ declare var System;
 })
 @RouteConfig([
 
-  //UI PAGES
+  //PAGES
   { path: '/ui/buttons',  name: 'Buttons',  component: ButtonsComponent },
   { path: '/ui/general',  name: 'General',  component: GeneralComponent },
   { path: '/ui/icons',  name: 'Icons',  component: IconsComponent },
   { path: '/ui/sliders',  name: 'Sliders',  component: SlidersComponent },
   { path: '/ui/timeline',  name: 'Timeline',  component: TimelineComponent },
   { path: '/ui/modals',  name: 'Modals',  component: ModalsComponent },
+  { path: '/forms/general',  name: 'GeneralForms',  component: GeneralFormsComponent },
 
   {
     path: '/dashboard',
@@ -42,10 +44,11 @@ declare var System;
     useAsDefault: true
   }
 ])
-export class AppComponent implements OnInit {
+export class AppComponent implements OnInit, AfterViewInit {
 
 
   ngOnInit() {
+    console.log("NG INIT - AppComponent");
     //<!-- Bootstrap 3.3.5 -->
     System.import('bootstrap/js/bootstrap.min');
     //<!-- Morris.js charts -->
@@ -71,6 +74,9 @@ export class AppComponent implements OnInit {
     //<!-- AdminLTE for demo purposes -->
     System.import('dist/js/demo');
 
+  }
+  ngAfterViewInit() {
+    console.log("AFTER VIEW INIT - AppComponent");
   }
 
 }
