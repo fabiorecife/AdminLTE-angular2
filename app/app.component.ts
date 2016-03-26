@@ -13,6 +13,8 @@ import {SlidersComponent} from './pages/UI/sliders.component';
 import {TimelineComponent} from './pages/UI/timeline.component';
 import {ModalsComponent} from './pages/UI/modals.component';
 import {GeneralFormsComponent} from './pages/forms/general.forms.component';
+import {AdvancedFormsComponent} from './pages/forms/advanced.forms.component';
+import {EditorsFormsComponent} from './pages/forms/editors.forms.component';
 
 declare var System;
 
@@ -36,6 +38,8 @@ declare var System;
   { path: '/ui/timeline',  name: 'Timeline',  component: TimelineComponent },
   { path: '/ui/modals',  name: 'Modals',  component: ModalsComponent },
   { path: '/forms/general',  name: 'GeneralForms',  component: GeneralFormsComponent },
+  { path: '/forms/advanced',  name: 'AdvancedForms',  component: AdvancedFormsComponent },
+  { path: '/forms/editors',  name: 'EditorsForms',  component: EditorsFormsComponent },
 
   {
     path: '/dashboard',
