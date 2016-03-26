@@ -10,5 +10,5 @@ import {ROUTER_DIRECTIVES} from 'angular2/router';
 
 export class HeaderComponent {
   title = "Admin";
-  subtitle = "JFN";
+  subtitle = "NG2";
 }
