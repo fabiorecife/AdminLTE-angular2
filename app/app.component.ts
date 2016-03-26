@@ -15,6 +15,10 @@ import {ModalsComponent} from './pages/UI/modals.component';
 import {GeneralFormsComponent} from './pages/forms/general.forms.component';
 import {AdvancedFormsComponent} from './pages/forms/advanced.forms.component';
 import {EditorsFormsComponent} from './pages/forms/editors.forms.component';
+import {SimpleTablesComponent} from './pages/tables/simple.tables.component';
+import {DataTablesComponent} from './pages/tables/data.tables.component';
+
+
 
 declare var System;
 
@@ -40,6 +44,8 @@ declare var System;
   { path: '/forms/general',  name: 'GeneralForms',  component: GeneralFormsComponent },
   { path: '/forms/advanced',  name: 'AdvancedForms',  component: AdvancedFormsComponent },
   { path: '/forms/editors',  name: 'EditorsForms',  component: EditorsFormsComponent },
+  { path: '/tables/simple',  name: 'SimpleTables',  component: SimpleTablesComponent },
+  { path: '/tables/data',  name: 'DataTables',  component: DataTablesComponent },
 
   {
     path: '/dashboard',
