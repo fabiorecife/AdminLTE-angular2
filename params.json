@@ -1,0 +1,6 @@
+{
+  "name": "Adminlte-angular2",
+  "tagline": "",
+  "body": "Introduction\r\n============\r\n\r\n**AdminLTE-angular2** -- is a fully responsive admin template with angular2. Based on **[AdminLTE](https://github.com/almasaeed2010/AdminLTE)** template.\r\n\r\nInstallation\r\n------------\r\n\r\n####Using The Command Line:\r\n\r\n**Github**\r\n\r\n- Fork the repository ([here is the guide](https://help.github.com/articles/fork-a-repo/)).\r\n- Clone to your machine\r\n```\r\nhttps://github.com/YOURNAME/AdminLTE-angular2.git\r\n```\r\n\r\n**NPM**\r\n\r\n```\r\nnpm install\r\nnpm start\r\n```\r\n\r\nScreenshot\r\n------------\r\n\r\n![screenshot](https://almsaeedstudio.com/AdminLTE2.png)\r\n",
+  "note": "Don't delete this file! It's used internally to help with page regeneration."
+}
