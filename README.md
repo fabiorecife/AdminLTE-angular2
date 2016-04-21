@@ -13,7 +13,7 @@ Installation
 - Fork the repository ([here is the guide](https://help.github.com/articles/fork-a-repo/)).
 - Clone to your machine
 ```
-git clone https://github.com/YOUR_USERNAME/AdminLTE.git
+https://github.com/YOURNAME/AdminLTE-angular2.git
 ```
 
 **NPM**
