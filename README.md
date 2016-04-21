@@ -22,3 +22,8 @@ git clone https://github.com/YOUR_USERNAME/AdminLTE.git
 npm install
 npm start
 ```
+
+Screenshot
+------------
+
+!["AdminLTE Presentation"] (https://almsaeedstudio.com/AdminLTE2.png "AdminLTE Presentation")
