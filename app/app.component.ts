@@ -1,6 +1,7 @@
 import {Component, OnInit, AfterViewInit} from 'angular2/core';
 import { RouteConfig, ROUTER_DIRECTIVES, ROUTER_PROVIDERS} from 'angular2/router';
 
+
 //PAGES
 import {DashboardComponent} from './pages/dashboard.component';
 import {ButtonsComponent} from './pages/UI/buttons.component';
@@ -9,7 +10,7 @@ import {SidebarComponent} from './pages/sidebar.component';
 import {ControlSidebarComponent} from './pages/control-sidebar.component';
 import {HeaderComponent} from './pages/header.component';
 //PAGES-UI
-import {GeneralComponent} from './pages/UI/general.component';
+import {GeneralComponent} from './pages/UI/general.component' ;
 import {IconsComponent} from './pages/UI/icons.component';
 import {SlidersComponent} from './pages/UI/sliders.component';
 import {TimelineComponent} from './pages/UI/timeline.component';
@@ -24,6 +25,12 @@ import {DataTablesComponent} from './pages/tables/data.tables.component';
 
 import {CalendarComponent} from './pages/calendar.component';
 import {MailboxComponent} from './pages/mailbox/mailbox.component';
+
+//PAGES-EXAMPLES
+import {InvoiceComponent} from './pages/examples/invoice.component';
+import {ProfileComponent} from './pages/examples/profile.component';
+
+
 
 declare var System;
 
@@ -53,6 +60,8 @@ declare var System;
   { path: '/tables/data',  name: 'DataTables',  component: DataTablesComponent },
   { path: '/calendar',  name: 'Calendar',  component: CalendarComponent },
   { path: '/mailbox/mailbox',  name: 'Mailbox',  component: MailboxComponent },
+  { path: '/examples/invoice',  name: 'Invoice',  component: InvoiceComponent },
+  { path: '/examples/profile',  name: 'Profile',  component: ProfileComponent },
 
   {
     path: '/dashboard',
