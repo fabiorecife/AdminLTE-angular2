@@ -1,5 +1,5 @@
 import {Component, OnInit, AfterViewInit} from 'angular2/core';
-import { RouteConfig, ROUTER_DIRECTIVES, ROUTER_PROVIDERS} from 'angular2/router';
+import { RouteConfig, ROUTER_DIRECTIVES} from 'angular2/router';
 
 
 //PAGES
@@ -39,10 +39,7 @@ declare var System;
     templateUrl: 'app/app.component.html',
     directives: [ROUTER_DIRECTIVES,
       FooterComponent,SidebarComponent,
-      ControlSidebarComponent,HeaderComponent],
-    providers: [
-      ROUTER_PROVIDERS
-    ]
+      ControlSidebarComponent,HeaderComponent]
 })
 @RouteConfig([
 
