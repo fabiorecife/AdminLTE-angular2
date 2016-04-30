@@ -3,6 +3,7 @@ import { RouteConfig, ROUTER_DIRECTIVES} from 'angular2/router';
 import {AppComponent} from './app.component';
 
 import {LoginComponent} from './pages/examples/login.component';
+import {RegisterComponent} from './pages/examples/register.component';
 
 @Component({
     selector: 'app-root',
@@ -14,6 +15,7 @@ import {LoginComponent} from './pages/examples/login.component';
 
 @RouteConfig([
   { path: '/login',  name: 'Login',  component: LoginComponent },
+  { path: '/register',  name: 'Register',  component: LoginComponent },
   {
     path: '/home/...',
     name: 'Home',
