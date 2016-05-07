@@ -1,7 +1,7 @@
 import {Component, OnInit, AfterViewInit} from 'angular2/core';
-import { RouteConfig, ROUTER_DIRECTIVES} from 'angular2/router';
+import { RouteConfig, ROUTER_DIRECTIVES,ComponentInstruction, CanActivate} from 'angular2/router';
 
-
+import {isLoggedIn} from './is-logged-in';
 //PAGES
 import {DashboardComponent} from './pages/dashboard.component';
 import {ButtonsComponent} from './pages/UI/buttons.component';
@@ -67,6 +67,9 @@ declare var System;
     useAsDefault: true
   }
 ])
+@CanActivate((next: ComponentInstruction, previous: ComponentInstruction) => {
+  return isLoggedIn(next, previous);
+})
 export class AppComponent implements OnInit, AfterViewInit {
 
 

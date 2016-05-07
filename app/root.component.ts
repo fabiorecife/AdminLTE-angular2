@@ -8,6 +8,7 @@ import {RegisterComponent} from './pages/examples/register.component';
 import {LoggedInRouterOutlet} from './logged-in-router-outlet';
 import {UserService} from './service/user.service';
 
+
 @Component({
     selector: 'app-root',
     template: `
@@ -28,4 +29,6 @@ import {UserService} from './service/user.service';
     useAsDefault: true
   }
 ])
+
+
 export class RootComponent { }

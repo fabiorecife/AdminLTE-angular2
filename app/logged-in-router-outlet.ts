@@ -24,7 +24,7 @@ export class LoggedInRouterOutlet extends RouterOutlet {
 
   activate(instruction: ComponentInstruction) {
     var url = this.parentRouter.lastNavigationAttempt;
-    if (!this.publicRoutes[url] && this._userService.isLoggedIn()) {
+    if (!this.publicRoutes[url] && true) {
       // todo: redirect to Login, may be there a better way?
       this.parentRouter.navigateByUrl('/login');
     }
