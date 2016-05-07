@@ -5,13 +5,16 @@ import {AppComponent} from './app.component';
 import {LockscreenComponent} from './pages/examples/lockscreen.component';
 import {LoginComponent} from './pages/examples/login.component';
 import {RegisterComponent} from './pages/examples/register.component';
+import {LoggedInRouterOutlet} from './logged-in-router-outlet';
+import {UserService} from './service/user.service';
 
 @Component({
     selector: 'app-root',
     template: `
     <router-outlet></router-outlet>
     `,
-    directives: [ROUTER_DIRECTIVES]
+    directives: [ROUTER_DIRECTIVES, LoggedInRouterOutlet],
+    providers:[UserService]
 })
 
 @RouteConfig([
