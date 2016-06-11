@@ -1,5 +1,5 @@
 import {Component} from 'angular2/core';
-import { RouteConfig, ROUTER_DIRECTIVES} from 'angular2/router';
+import { RouteConfig,Route,Router, ROUTER_DIRECTIVES} from 'angular2/router';
 import {AppComponent} from './app.component';
 
 import {LockscreenComponent} from './pages/examples/lockscreen.component';
@@ -7,7 +7,8 @@ import {LoginComponent} from './pages/examples/login.component';
 import {RegisterComponent} from './pages/examples/register.component';
 import {LoggedInRouterOutlet} from './logged-in-router-outlet';
 import {UserService} from './service/user.service';
-
+import {RouterState} from './RouterState';
+import {Auth} from './Auth';
 
 @Component({
     selector: 'app-root',
@@ -22,6 +23,7 @@ import {UserService} from './service/user.service';
   { path: '/login',  name: 'Login',  component: LoginComponent },
   { path: '/register',  name: 'Register',  component: LoginComponent },
   { path: '/lockscreen',  name: 'Lockscreen',  component: LockscreenComponent },
+
   {
     path: '/home/...',
     name: 'Home',
@@ -31,4 +33,11 @@ import {UserService} from './service/user.service';
 ])
 
 
-export class RootComponent { }
+export class RootComponent {
+  constructor(
+    public auth: Auth,
+    public router: Router,
+    routerState: RouterState
+  ) {}
+
+}

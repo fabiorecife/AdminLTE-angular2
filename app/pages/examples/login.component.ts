@@ -27,7 +27,7 @@ export class LoginComponent implements OnInit {
     //this.target = this.params.get('target');
 
     this.router.navigate(['Home']);
-    //window.location.href  = "http://localhost:3000/#/home/dashboard";
+    
   }
   ngOnInit() {
 
